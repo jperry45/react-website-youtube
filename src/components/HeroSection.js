@@ -23,7 +23,7 @@ function HeroSection() {
           buttonStyle='btn--outline'
           buttonSize='btn--large'
         >
-          Earth GPS Images
+          Near-Earth Asteroid Lookup
         </Button2>
       </div>
     </div>
