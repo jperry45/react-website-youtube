@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 import { Button } from './Button';
+import { Button2 } from './Button2';
 import './HeroSection.css';
 
 function HeroSection() {
@@ -17,6 +18,13 @@ function HeroSection() {
         >
           Astronomy Picture Of The Day
         </Button>
+        <Button2
+          className='btns'
+          buttonStyle='btn--outline'
+          buttonSize='btn--large'
+        >
+          Earth GPS Images
+        </Button2>
       </div>
     </div>
   );

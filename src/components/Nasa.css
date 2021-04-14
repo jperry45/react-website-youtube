@@ -1,3 +1,11 @@
 .nasa {
   overflow: hidden;
 }
+
+.options:link {
+  color: red;
+}
+
+.options:visited {
+  color: black;
+}

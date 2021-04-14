@@ -4,6 +4,7 @@ import './App.css';
 import Home from './components/pages/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Astronomy from './components/pages/Astronomy';
+import Asteroid from './components/pages/Asteroid';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Switch>
           <Route path='/' exact component={Home} />]
           <Route path='/astronomy' component={Astronomy} />
+          <Route path='/asteroid' component={Asteroid} />
         </Switch>
       </Router>
     </>

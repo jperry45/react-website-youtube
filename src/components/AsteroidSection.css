@@ -1,0 +1,17 @@
+.astronomy {
+  background-image: url('/images/space.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  display: flex;
+  flex-direction: column;
+}
+
+.nasa {
+  overflow: hidden;
+}
