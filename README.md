@@ -1,7 +1,7 @@
 # react-website-nasa
 A sample website built with React that implements NASA's public APIs
 
-![alt text](https://github.com/jperry45/react-website-nasa/blob/master/image.jpg?raw=true)
+![alt text](https://github.com/jperry45/react-website-nasa/blob/master/frontpage.png?raw=true)
 
 # How to run
 - Have a recent version of Node.js installed (https://nodejs.org/en/)
