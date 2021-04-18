@@ -12,7 +12,8 @@ function App() {
       <Router>
         <Header />
         <Switch>
-          <Route path='/' exact component={FrontPageLayout} />]
+          <Route path='/react-website-nasa' exact component={FrontPageLayout} />
+          <Route path='/' exact component={FrontPageLayout} />
           <Route path='/astronomy' component={APODPageLayout} />
           <Route path='/asteroid' component={NEAPageLayout} />
         </Switch>
