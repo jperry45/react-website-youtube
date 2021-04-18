@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import '../../App.css';
 import Footer from '../Footer';
-import AsteroidSection from '../AsteroidSection';
+import APODSection from '../APODSection';
 
-export default function Asteroid() {
+export default function APODPageLayout() {
   return (
     <>
-      <AsteroidSection />
+      <APODSection />
       <Footer />
     </>
   );

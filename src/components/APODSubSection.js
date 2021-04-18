@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import $ from 'jquery';
-import './Nasa.css';
+import './APODSubSection.css';
+import Button from 'react-bootstrap/Button';
 
-export default class Nasa extends React.Component {
+export default class APODSubSection extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -15,9 +16,9 @@ export default class Nasa extends React.Component {
 	render() {
 		return (
 			<>
-			  <button onClick={this.fetch.bind(this)}>
+			  <Button onClick={this.fetch.bind(this)}>
 			  	Fetch Latest
-			  </button>
+			  </Button>
 			  <p>
 			    {this.state.title}
 			  </p>

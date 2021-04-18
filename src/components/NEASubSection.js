@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import $ from 'jquery';
-import './Nasa.css';
+import './NEASubSection.css';
+import Button from 'react-bootstrap/Button';
 
-export default class AsteroidSubSection extends React.Component {
+export default class NEASubSection extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -12,12 +13,12 @@ export default class AsteroidSubSection extends React.Component {
 
 
 	render() {
-		const listItems = this.state.asteroids.map((d) => <a className="options" href={d.nasa_jpl_url}>{d.name}</a>);
+		const listItems = this.state.asteroids.slice(0,5).map((d) => <a className="options" href={d.nasa_jpl_url}>{d.name}</a>);
 		return (
 			<>
-			  <button onClick={this.fetch.bind(this)}>
+			  <Button onClick={this.fetch.bind(this)}>
 			  	Find Asteroids
-			  </button>
+			  </Button>
 			  {listItems}
 			</>
 		);
@@ -51,6 +52,5 @@ export default class AsteroidSubSection extends React.Component {
 		      	asteroids: result.near_earth_objects[formattedDate]
 		      });
 		    })
-		console.log(this.state.asteroids[0]);
 	}
 }

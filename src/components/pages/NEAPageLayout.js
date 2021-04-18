@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import '../../App.css';
 import Footer from '../Footer';
-import AstronomySection from '../AstronomySection';
+import NEASection from '../NEASection';
 
-export default function Astronomy() {
+export default function NEAPageLayout() {
   return (
     <>
-      <AstronomySection />
+      <NEASection />
       <Footer />
     </>
   );

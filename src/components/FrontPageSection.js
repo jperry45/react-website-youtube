@@ -1,33 +1,33 @@
 import React from 'react';
 import '../App.css';
-import { Button } from './Button';
-import { Button2 } from './Button2';
-import './HeroSection.css';
+import { APODButton } from './APODButton';
+import { NEAButton } from './NEAButton';
+import './FrontPageSection.css';
 
-function HeroSection() {
+function FrontPageSection() {
   return (
     <div className='hero-container'>
       <video src='/videos/video-2.mp4' autoPlay loop muted />
       <h1>WELCOME</h1>
       <p>Please select one of the following features</p>
       <div className='hero-btns'>
-        <Button
+        <APODButton
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
         >
           Astronomy Picture Of The Day
-        </Button>
-        <Button2
+        </APODButton>
+        <NEAButton
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
         >
           Near-Earth Asteroid Lookup
-        </Button2>
+        </NEAButton>
       </div>
     </div>
   );
 }
 
-export default HeroSection;
+export default FrontPageSection;

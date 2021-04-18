@@ -9,3 +9,7 @@
 .options:visited {
   color: black;
 }
+
+.options {
+	overflow:hidden;
+}

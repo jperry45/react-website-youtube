@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import '../App.css';
-import './AsteroidSection.css';
-import AsteroidSubSection from './AsteroidSubSection';
+import './NEASection.css';
+import NEASubSection from './NEASubSection';
 import DatePicker from "react-datepicker";
 
 
-function AsteroidSection() {
+function NEASection() {
 
   const [selectedDate, setSelectedDate] = useState(new Date());
 
@@ -14,11 +14,11 @@ function AsteroidSection() {
   return (
     <div className='astronomy'>
       <h1>Near-Earth Asteroid Lookup</h1>
-      <p>Select a date to view all near-earth asteroids for that date!</p>
+      <p>Select a date to view near-earth asteroids for that date!</p>
       <DatePicker selected={selectedDate} onChange={date => setSelectedDate(date)} />
-      <AsteroidSubSection date={selectedDate.toLocaleDateString("en-US", options)} />
+      <NEASubSection date={selectedDate.toLocaleDateString("en-US", options)} />
     </div>
   );
 }
 
-export default AsteroidSection;
+export default NEASection;

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css';
+import './Header.css';
 
-function Navbar() {
+function Header() {
 
   return (
     <>
@@ -10,7 +10,7 @@ function Navbar() {
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo'>
             React NASA Website
-            <i class='fab fa-typo3' />
+            <i class='fas fa-rocket' />
           </Link>
         </div>
       </nav>
@@ -18,4 +18,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Header;
