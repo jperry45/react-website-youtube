@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import $ from 'jquery';
 import './NEASubSection.css';
-import Button from 'react-bootstrap/Button';
+import { Button } from './Button';
 
 export default class NEASubSection extends React.Component {
 	constructor(props) {

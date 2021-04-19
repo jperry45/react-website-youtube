@@ -13,7 +13,7 @@ function NEASection() {
 
   return (
     <div className='astronomy'>
-      <h1>Near-Earth Asteroid Lookup</h1>
+      <h3>Near-Earth Asteroid Lookup</h3>
       <p>Select a date to view near-earth asteroids for that date!</p>
       <DatePicker selected={selectedDate} onChange={date => setSelectedDate(date)} />
       <NEASubSection date={selectedDate.toLocaleDateString("en-US", options)} />

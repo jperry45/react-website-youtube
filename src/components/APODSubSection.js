@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import $ from 'jquery';
 import './APODSubSection.css';
-import Button from 'react-bootstrap/Button';
+import { Button } from './Button';
 
 export default class APODSubSection extends React.Component {
 	constructor(props) {
