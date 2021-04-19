@@ -3,9 +3,5 @@ A sample website built with React that implements NASA's public APIs
 
 ![React Nasa Website](https://github.com/jperry45/react-website-nasa/blob/master/demo.gif)
 
-# How to run
-- Have a recent version of Node.js installed (https://nodejs.org/en/)
-- Clone the repository into a directory on your machine (git clone https://github.com/jperry45/react-website-nasa.git)
-- On Mac/Linux, cd to the repository's root directory and run the following:
-  - npm install
-  - npm start
+# Check out the website on GitHub pages!
+https://jperry45.github.io/react-website-nasa/
