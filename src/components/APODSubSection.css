@@ -1,5 +1,6 @@
 .nasa {
   overflow: hidden;
+  max-width: 100%;
 }
 
 .options:link {
