@@ -17,7 +17,7 @@ export default class APODSubSection extends React.Component {
 		return (
 			<>
 			  <Button onClick={this.fetch.bind(this)}>
-			  	Fetch Latest
+			  	Fetch Picture
 			  </Button>
 			  <p>
 			    {this.state.title}
