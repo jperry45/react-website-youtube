@@ -15,24 +15,29 @@ export default class NEASubSection extends React.Component {
 	asteroid(data) {
 		return (
 		  <a className="options" href={data.data.nasa_jpl_url}>
-		  Name: {data.data.name}  Distance: {data.data.close_approach_data[0].miss_distance.astronomical}AU from Earth</a>
+		  Name: {data.data.name}
+		  <br />Distance: {data.data.close_approach_data[0].miss_distance.astronomical}AU from Earth</a>
 		);
 	}
 
 
 	render() {
+		let pagination;
+		if (this.state.asteroids !== undefined && this.state.asteroids.length != 0) {
+			pagination = <Pagination
+			    data={this.state.asteroids}
+			    RenderComponent={this.asteroid}
+			    title="Posts"
+			    pageLimit={5}
+			    dataLimit={4}
+			  />
+		}
 		return (
 			<>
 			  <Button onClick={this.fetch.bind(this)}>
 			  	Find Asteroids
 			  </Button>
-			  <Pagination
-			    data={this.state.asteroids}
-			    RenderComponent={this.asteroid}
-			    title="Posts"
-			    pageLimit={5}
-			    dataLimit={5}
-			  />
+			  {pagination}
 			</>
 		);
 	}
