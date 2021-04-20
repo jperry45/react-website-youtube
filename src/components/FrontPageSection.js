@@ -8,6 +8,7 @@ function FrontPageSection() {
   return (
     <div className='hero-container'>
       <h1>WELCOME</h1>
+      <p>Click the header to return home at any time</p>
       <p>Please select one of the following features</p>
       <div className='hero-btns'>
         <APODButton
