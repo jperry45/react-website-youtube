@@ -1,5 +1,5 @@
 .asteroid {
-  background-image: url('/react-website-nasa/images/galaxy.jpg');
+  background-image: url('/react-website-nasa/images/space.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -14,4 +14,9 @@
 
 .nasa {
   overflow: hidden;
+}
+
+.datepicker {
+  font-size: 20px;
+  text-align: center;
 }

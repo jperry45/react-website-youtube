@@ -15,3 +15,8 @@
 .nasa {
   overflow: hidden;
 }
+
+.datepicker {
+  font-size: 20px;
+  text-align: center;
+}

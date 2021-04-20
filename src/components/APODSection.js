@@ -16,7 +16,7 @@ function APODSection() {
     <div className='astronomy'>
       <h3>Astronomy Picture Of The Day</h3>
       <p>Please select a date from the calendar to see that picture of the day!</p>
-      <DatePicker selected={selectedDate} onChange={date => setSelectedDate(date)} />
+      <DatePicker className="datepicker" selected={selectedDate} onChange={date => setSelectedDate(date)} />
       <APODSubSection date={selectedDate.toLocaleDateString("en-US", options)} className="nasa"/>
     </div>
   );
