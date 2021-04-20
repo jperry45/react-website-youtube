@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import '../App.css';
 import './APODSection.css';
 import APODSubSection from './APODSubSection';
 import DatePicker from "react-datepicker";

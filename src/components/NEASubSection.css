@@ -3,13 +3,14 @@
 }
 
 .options:link {
-  color: red;
+  color: white;
 }
 
 .options:visited {
-  color: black;
+  color: white;
 }
 
 .options {
 	overflow:hidden;
+	margin: 10px;
 }

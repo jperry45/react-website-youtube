@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import $ from 'jquery';
 import './NEASubSection.css';
 import { Button } from './Button';
+import Pagination from './Pagination';
 
 export default class NEASubSection extends React.Component {
 	constructor(props) {
@@ -11,15 +12,27 @@ export default class NEASubSection extends React.Component {
 		}
 	}
 
+	asteroid(data) {
+		return (
+		  <a className="options" href={data.data.nasa_jpl_url}>
+		  Name: {data.data.name}  Distance: {data.data.close_approach_data[0].miss_distance.astronomical}AU from Earth</a>
+		);
+	}
+
 
 	render() {
-		const listItems = this.state.asteroids.slice(0,5).map((d) => <a className="options" href={d.nasa_jpl_url}>{d.name}</a>);
 		return (
 			<>
 			  <Button onClick={this.fetch.bind(this)}>
 			  	Find Asteroids
 			  </Button>
-			  {listItems}
+			  <Pagination
+			    data={this.state.asteroids}
+			    RenderComponent={this.asteroid}
+			    title="Posts"
+			    pageLimit={5}
+			    dataLimit={5}
+			  />
 			</>
 		);
 	}
