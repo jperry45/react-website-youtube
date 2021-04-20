@@ -1,4 +1,5 @@
-.astronomy {
+.asteroid {
+  background-image: url('/react-website-nasa/images/galaxy.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

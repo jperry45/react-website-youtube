@@ -12,7 +12,7 @@ function NEASection() {
   var options = {month: 'numeric', year: 'numeric', day: 'numeric'}
 
   return (
-    <div className='astronomy'>
+    <div className='asteroid'>
       <h3>Near-Earth Asteroid Lookup</h3>
       <p>Select a date to view near-earth asteroids for that date!</p>
       <DatePicker selected={selectedDate} onChange={date => setSelectedDate(date)} />
