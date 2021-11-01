@@ -7,22 +7,21 @@ import './FrontPageSection.css';
 function FrontPageSection() {
   return (
     <div className='hero-container'>
-      <h1>WELCOME</h1>
-      <p>Please select one of the following features</p>
+      <h1>Youtube Data API v3</h1>
       <div className='hero-btns'>
         <APODButton
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
         >
-          Astronomy Picture Of The Day
+          Get most popular channels
         </APODButton>
         <NEAButton
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
         >
-          Near-Earth Asteroid Lookup
+          Get most viewed videos
         </NEAButton>
       </div>
     </div>
