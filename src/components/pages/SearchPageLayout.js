@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import '../../App.css';
 import Footer from '../Footer';
-import NEASection from '../NEASection';
+import SearchSection from '../SearchSection';
 
-export default function NEAPageLayout() {
+export default function SearchPageLayout() {
   return (
     <>
-      <NEASection />
+      <SearchSection />
       <Footer />
     </>
   );

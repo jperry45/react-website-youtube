@@ -9,8 +9,8 @@ function Header() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo'>
-            React NASA Website
-            <i class='fas fa-rocket' />
+            Youtube Data API v3
+            <i class='fas fa-play' />
           </Link>
         </div>
       </nav>

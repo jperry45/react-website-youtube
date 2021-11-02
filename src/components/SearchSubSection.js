@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import './NEASubSection.css';
+import './SearchSubSection.css';
 import { Button } from './Button';
 import Pagination from './Pagination';
 
-export default class APODSubSection extends React.Component {
+export default class SearchSubSection extends React.Component {
 
   constructor(props) {
     super(props);
@@ -58,7 +58,6 @@ export default class APODSubSection extends React.Component {
       .then(res => res.json())
       .then(
         (result) => {
-          console.log(result);
           context.setState({
             items: result.items
           });

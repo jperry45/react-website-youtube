@@ -3,8 +3,7 @@ import Header from './components/Header';
 import './App.css';
 import FrontPageLayout from './components/pages/FrontPageLayout';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import APODPageLayout from './components/pages/APODPageLayout';
-import NEAPageLayout from './components/pages/NEAPageLayout';
+import SearchPageLayout from './components/pages/SearchPageLayout';
 
 function App() {
   return (
@@ -12,10 +11,9 @@ function App() {
       <Router>
         <Header />
         <Switch>
-          <Route path='/react-website-nasa' exact component={FrontPageLayout} />
+          <Route path='/react-website-youtube' exact component={FrontPageLayout} />
           <Route path='/' exact component={FrontPageLayout} />
-          <Route path='/astronomy' component={APODPageLayout} />
-          <Route path='/asteroid' component={NEAPageLayout} />
+          <Route path='/search' component={SearchPageLayout} />
         </Switch>
       </Router>
     </>

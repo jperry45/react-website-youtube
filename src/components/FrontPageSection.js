@@ -1,28 +1,20 @@
 import React from 'react';
 import '../App.css';
-import { APODButton } from './APODButton';
-import { NEAButton } from './NEAButton';
+import { SearchButton } from './SearchButton';
 import './FrontPageSection.css';
 
 function FrontPageSection() {
   return (
     <div className='hero-container'>
-      <h1>Youtube Data API v3</h1>
+      <h1>Mini Youtube</h1>
       <div className='hero-btns'>
-        <APODButton
+        <SearchButton
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
         >
-          Get most popular channels
-        </APODButton>
-        <NEAButton
-          className='btns'
-          buttonStyle='btn--outline'
-          buttonSize='btn--large'
-        >
-          Get most viewed videos
-        </NEAButton>
+          Go to Search!
+        </SearchButton>
       </div>
     </div>
   );

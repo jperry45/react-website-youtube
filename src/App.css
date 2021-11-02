@@ -6,7 +6,7 @@
 }
 
 .home,
-.astronomy {
+.search {
   display: flex;
   height: 90vh;
   align-items: center;
@@ -14,25 +14,7 @@
   font-size: 3rem;
 }
 
-.astronomy {
-  background-image: url('react-website-nasa/images/space.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
-
-.home,
-.asteroid {
-  display: flex;
-  height: 90vh;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
-}
-
-.asteroid {
+.search {
   background-image: url('react-website-nasa/images/space.jpg');
   background-position: center;
   background-size: cover;
