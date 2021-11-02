@@ -39,13 +39,11 @@ export default class APODSubSection extends React.Component {
   }
 
   item(data) {
-    const url = "https://www.youtube.com/channel/" + data.data.snippet.channelId;
+    const url = "https://www.youtube.com/embed/" + data.data.id.videoId;
     return (
       <>
-        <img src={data.data.snippet.thumbnails.default.url}/>
-        <a className="options" href={url}>
-        {data.data.snippet.title}
-        </a>
+        <iframe src={url} frameBorder='0' allow='autoplay; encrypted-media'
+            allowFullScreen title='video' width='480' height='480'/>
       </>
     );
   }
