@@ -6,7 +6,7 @@ import './FrontPageSection.css';
 function FrontPageSection() {
   return (
     <div className='hero-container'>
-      <h1>Mini Youtube</h1>
+      <h1>Made with YouTube Data API v3</h1>
       <div className='hero-btns'>
         <SearchButton
           className='btns'

@@ -9,7 +9,7 @@ function Header() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo'>
-            Youtube Data API v3
+            Mini YouTube&nbsp;
             <i class='fas fa-play' />
           </Link>
         </div>

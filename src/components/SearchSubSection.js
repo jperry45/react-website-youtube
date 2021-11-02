@@ -29,9 +29,9 @@ export default class SearchSubSection extends React.Component {
       <>
         <form onSubmit={this.fetch}>
           <label>
-            <input type="text" value={this.state.query} onChange={e => this.setState({query: e.target.value})} />
+            <input className="searchBox" type="text" value={this.state.query} onChange={e => this.setState({query: e.target.value})} />
           </label>
-          <input type="submit" value="Search" />
+          <input className="submitButton" type="submit" value="Search!" />
         </form>
         {pagination}
       </>
@@ -42,8 +42,8 @@ export default class SearchSubSection extends React.Component {
     const url = "https://www.youtube.com/embed/" + data.data.id.videoId;
     return (
       <>
-        <iframe src={url} frameBorder='0' allow='autoplay; encrypted-media'
-            allowFullScreen title='video' width='480' height='480'/>
+        <iframe className="embeddedVid" src={url} frameBorder='0' allow='autoplay; encrypted-media'
+            allowFullScreen title='video' width='480' height='360'/>
       </>
     );
   }
