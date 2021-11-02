@@ -8,8 +8,10 @@ export default class APODSubSection extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      items: []
+      items: [],
+      query: this.props.defaultInputValue || ''
     }
+    this.fetch = this.fetch.bind(this);
   }
 
   render() {
@@ -25,34 +27,40 @@ export default class APODSubSection extends React.Component {
     }
     return (
       <>
-        <div className="channelDiv">
-          <Button onClick={this.fetch.bind(this)}>
-            Fetch Most Popular Channels
-          </Button>
-          {pagination}
-        </div>
+        <form onSubmit={this.fetch}>
+          <label>
+            <input type="text" value={this.state.query} onChange={e => this.setState({query: e.target.value})} />
+          </label>
+          <input type="submit" value="Search" />
+        </form>
+        {pagination}
       </>
     );
   }
 
   item(data) {
+    const url = "https://www.youtube.com/channel/" + data.data.snippet.channelId;
     return (
       <>
         <img src={data.data.snippet.thumbnails.default.url}/>
-        <p>{data.data.snippet.title}</p>
+        <a className="options" href={url}>
+        {data.data.snippet.title}
+        </a>
       </>
     );
   }
 
-  fetch() {
+  fetch(event) {
+    event.preventDefault();
     var context = this;
 
-    var url = "https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyAX_SfM7Axbeei4wfGUkFxP5TIrABhKnko&type=channel&order=viewCount&maxResults=20";
+    var url = "https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyAX_SfM7Axbeei4wfGUkFxP5TIrABhKnko&type=video&q=" + this.state.query + "&maxResults=50";
 
     fetch(url)
       .then(res => res.json())
       .then(
         (result) => {
+          console.log(result);
           context.setState({
             items: result.items
           });

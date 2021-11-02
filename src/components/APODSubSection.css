@@ -7,3 +7,8 @@
 	overflow:hidden;
 	margin: 10px;
 }
+
+.searchBox input[type="text"]
+{
+    font-size:48px;
+}
